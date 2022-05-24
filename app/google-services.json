@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "840279058417",
+    "project_id": "mytripprojectgit",
+    "storage_bucket": "mytripprojectgit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840279058417:android:82361a29e380a0777e0650",
+        "android_client_info": {
+          "package_name": "com.example.android.mytripproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "840279058417-asn7t4888o79uaimqh996ru14lf3386u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6fAPMlijt3hc7856ZZY_ZtTarVr_lzEM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "840279058417-asn7t4888o79uaimqh996ru14lf3386u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

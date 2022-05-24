@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProgramActivity">
+
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/istanbul1" />
+
+    <ImageView
+        android:id="@+id/Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icarrow_back" />
+
+    <TextView
+        android:id="@+id/destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Istanbul, Turkey"
+        android:textColor="#1a759f"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="12dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/destination"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/destination"
+        app:srcCompat="@drawable/star" />
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:text="4.5"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/star"
+        app:layout_constraintEnd_toStartOf="@+id/star"
+        app:layout_constraintTop_toTopOf="@+id/star" />
+
+    <TextView
+        android:id="@+id/Available_flight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Available flight :"
+        android:textColor="#044363"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/destination"
+        app:layout_constraintTop_toBottomOf="@+id/destination" />
+
+    <TextView
+        android:id="@+id/price_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Price range : "
+        android:textColor="#044363"
+        app:layout_constraintStart_toStartOf="@+id/Available_flight"
+        app:layout_constraintTop_toBottomOf="@+id/Available_flight" />
+
+
+    <TextView
+        android:id="@+id/Air_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Air Company : "
+        android:textColor="#044363"
+        app:layout_constraintStart_toStartOf="@+id/price_range"
+        app:layout_constraintTop_toBottomOf="@+id/price_range" />
+
+
+
+    <TextView
+        android:id="@+id/hotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Hotel : "
+        android:textColor="#044363"
+        app:layout_constraintStart_toStartOf="@+id/Air_company"
+        app:layout_constraintTop_toBottomOf="@+id/Air_company" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="11 July,  2022"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Available_flight"
+        app:layout_constraintStart_toEndOf="@+id/Available_flight"
+        app:layout_constraintTop_toTopOf="@+id/Available_flight" />
+
+    <TextView
+        android:id="@+id/prix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="2550DT - 3250DT"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/price_range"
+        app:layout_constraintStart_toEndOf="@+id/price_range"
+        app:layout_constraintTop_toTopOf="@+id/price_range" />
+
+
+    <TextView
+        android:id="@+id/nom_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Turkish Airlines"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Air_company"
+        app:layout_constraintStart_toEndOf="@+id/Air_company"
+        app:layout_constraintTop_toTopOf="@+id/Air_company" />
+
+
+    <TextView
+        android:id="@+id/hotel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Swissotel The Bosphorus Istanbul "
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/hotel"
+        app:layout_constraintStart_toEndOf="@+id/hotel"
+        app:layout_constraintTop_toTopOf="@+id/hotel" />
+
+    <TextView
+        android:id="@+id/program"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Program"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/Air_company"
+        app:layout_constraintStart_toStartOf="@+id/Air_company"
+        app:layout_constraintTop_toBottomOf="@+id/price_range" />
+
+
+    <!--*************!-->
+    <TextView
+        android:id="@+id/DAY1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="DAY1 :"
+        android:textColor="#e5989b"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/program"
+        app:layout_constraintTop_toBottomOf="@+id/program" />
+
+    <TextView
+        android:id="@+id/DAY2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="DAY2 : "
+        android:textColor="#e5989b"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/DAY1"
+        app:layout_constraintTop_toBottomOf="@+id/DAY1" />
+
+
+    <TextView
+        android:id="@+id/DAY3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="DAY3 : "
+        android:textColor="#e5989b"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/DAY2"
+        app:layout_constraintTop_toBottomOf="@+id/DAY2" />
+
+
+    <TextView
+        android:id="@+id/DAY4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="DAY4 : "
+        android:textColor="#e5989b"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/DAY3"
+        app:layout_constraintTop_toBottomOf="@+id/DAY3" />
+
+
+    <TextView
+        android:id="@+id/DAY5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="DAY5 : "
+        android:textColor="#e5989b"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/DAY4"
+        app:layout_constraintTop_toBottomOf="@+id/DAY4" />
+
+
+    <TextView
+        android:id="@+id/DAY6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="DAY6 : "
+        android:textColor="#e5989b"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/DAY5"
+        app:layout_constraintTop_toBottomOf="@+id/DAY5" />
+
+
+    <TextView
+        android:id="@+id/DAY7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="DAY7 : "
+        android:textColor="#e5989b"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/DAY6"
+        app:layout_constraintTop_toBottomOf="@+id/DAY6" />
+
+
+    <!--*************!-->
+
+
+
+    <!--*************!-->
+
+
+    <TextView
+        android:id="@+id/prog_day1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Arrival and Getting Settled "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/DAY1"
+        app:layout_constraintStart_toEndOf="@+id/DAY1"
+        app:layout_constraintTop_toTopOf="@+id/DAY1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/prog_day2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Introduction to Istanbul and SultanAhmet  "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/DAY2"
+        app:layout_constraintStart_toEndOf="@+id/DAY2"
+        app:layout_constraintTop_toTopOf="@+id/DAY2" />
+
+
+    <TextView
+        android:id="@+id/prog_day3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Experiencing Topkapi Palace and A Taste of Istanbul  "
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/DAY3"
+        app:layout_constraintStart_toEndOf="@+id/DAY3"
+        app:layout_constraintTop_toTopOf="@+id/DAY3" />
+
+
+    <TextView
+        android:id="@+id/prog_day4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Evening Bosphorus Cruise through the Bosphorous Strait"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/DAY4"
+        app:layout_constraintStart_toEndOf="@+id/DAY4"
+        app:layout_constraintTop_toTopOf="@+id/DAY4" />
+
+    <TextView
+        android:id="@+id/prog_day5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Suleymaniye Mosque, and the Grand Bazaar"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/DAY5"
+        app:layout_constraintStart_toEndOf="@+id/DAY5"
+        app:layout_constraintTop_toTopOf="@+id/DAY5" />
+
+
+    <TextView
+        android:id="@+id/prog_day6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="History and Continuity in Istanbul"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/DAY6"
+        app:layout_constraintStart_toEndOf="@+id/DAY6"
+        app:layout_constraintTop_toTopOf="@+id/DAY6" />
+
+
+    <TextView
+        android:id="@+id/prog_day7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Departure"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/DAY7"
+        app:layout_constraintStart_toEndOf="@+id/DAY7"
+        app:layout_constraintTop_toTopOf="@+id/DAY7" />
+
+
+
+
+
+
+    <!--*************!-->
+
+
+    <Button
+        android:id="@+id/book_now"
+        android:layout_width="234dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/boutonn_bg"
+        android:text="Book now!"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prog_day7" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/book_now"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prog_day7"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/favorites"
+        app:lottie_url="REPLACE_JSON_URL" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

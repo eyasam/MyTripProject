@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">MyTripPass</string>
+    <string name="new_user">New user ?</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="login">LOGIN</string>
+    <string name="signup">Sign Up</string>
+    <string name="ForgotPswd">Forgot Password ?</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="submit">Submit</string>
+
+
+    <string name="hello">WELCOME</string>
+    <string name="mm">Votre mot de passe est :</string>
+    <string name="hi">Hello !!</string>
+    <string name="mailmsg">Your Email Is :</string>
+    <string name="passmsg">Your Password Is :</string>
+    <string name="thanks">Thank U</string>
+    <string name="yourmail">Enter Your Mail :</string>
+    <string name="Writecode">Write Code</string>
+    <string name="code">Code</string>
+    <string name="verify">Verify</string>
+    <string name="reset_password">RESET PASSWORD</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="countries">
+        <item>PARIS</item>
+        <item>ISTANBUL</item>
+        <item>CAIRO</item>
+        <item>ROME</item>
+        <item>SANTORINI</item>
+        <item>HAWAII</item>
+        <item>MALDIVE</item>
+        <item>NEW YORK</item>
+
+    </string-array>
+
+
+    <string name="weare">We Are :</string>
+</resources>
