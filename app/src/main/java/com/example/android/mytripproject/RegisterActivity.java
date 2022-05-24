@@ -26,22 +26,16 @@ public class RegisterActivity extends AppCompatActivity {
     ProgressDialog progressDialog;
 
     Button Submit_btn;
-    public static final String MyPREFERENCES = "MyPrefs" ;
-    public static final String e1 = "emailKey";
-    public static final String p1 = "passKey";
-    public static final String phone1 = "phoneKey";
-    public static final String name1 = "nameKey";
+
     FirebaseAuth mAuth;
     FirebaseUser mUser;
 
-    // public static SharedPreferences sharedpreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         initView();
-        //sharedpreferences = getSharedPreferences(MyPREFERENCES,MODE_PRIVATE);
         initEvent();
 
     }
@@ -73,7 +67,6 @@ public class RegisterActivity extends AppCompatActivity {
                 String password = Password.getText().toString();
                 String confirmPassword = Confirm_password.getText().toString();
                 String phonenumber = PhoneNumber.getText().toString();
-            //    SharedPreferences.Editor editor = sharedpreferences.edit();
 
                 if (username.isEmpty()) {
                     showError(FullName, "Your username is not valid!");
@@ -102,15 +95,7 @@ public class RegisterActivity extends AppCompatActivity {
                                 Toast.makeText(RegisterActivity.this, "" + task.getException(), Toast.LENGTH_LONG).show();
                             }
                         }  });
-                  /*  editor.putString("NAME", username);
-                    editor.putString("EMAIL", email);
-                    editor.putString("phone1", phonenumber);
-                    editor.putString("PASSWORD", password);
-                    editor.commit();*/
-                    //Intent x = new Intent(RegisterActivity.this, LoginActivity.class);
-                    //  Toast.makeText(RegisterActivity.this, "thanks for you registration", Toast.LENGTH_SHORT).show();
-                   // Toast.makeText(RegisterActivity.this,"Thanks for Your Sign UP",Toast.LENGTH_LONG).show ();
-                   // startActivity(x);
+
                     }
 
             }
